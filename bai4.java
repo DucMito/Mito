@@ -1,16 +1,16 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class bai4 {
         public static void main(String[] args) {
             Scanner scanner = new Scanner(System.in);
             String choice;
-
             do {
-                System.out.print("Name: ");
+                System.out.println("Name: ");
                 String name = scanner.nextLine();
-                System.out.print("Address: ");
+                System.out.println("Address: ");
                 String address = scanner.nextLine();
-                System.out.print("Age: ");
+                System.out.println("Age: ");
                 int age = Integer.parseInt(scanner.nextLine());
 
                 System.out.println("Thông tin sinh viên:");
@@ -19,9 +19,11 @@ public class bai4 {
                 System.out.println("Tuổi: " + age);
                 System.out.print("Do you want to continue? (Y/N): ");
                 choice = scanner.nextLine();
-            } while (choice.equalsIgnoreCase("Y"));
-            System.out.println("The End.");
+            } while(choice.equalsIgnoreCase("y"));
+            System.out.println("The end.");
+
+            }
         }
-    }
+
 
 
